@@ -1,0 +1,73 @@
+.Ldsellipsis {
+   display: inline-block;
+   position: relative;
+   width: 80px;
+   height: 80px;
+}
+
+.Ldsellipsis div {
+   position: absolute;
+   top: 33px;
+   width: 13px;
+   height: 13px;
+   border-radius: 50%;
+   background: teal;
+   animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.Ldsellipsis div:nth-child(1) {
+   left: 8px;
+   animation: Ldsellipsis1 0.6s infinite;
+}
+
+.Ldsellipsis div:nth-child(2) {
+   left: 8px;
+   animation: Ldsellipsis2 0.6s infinite;
+}
+
+.Ldsellipsis div:nth-child(3) {
+   left: 32px;
+   animation: Ldsellipsis2 0.6s infinite;
+}
+
+.Ldsellipsis div:nth-child(4) {
+   left: 56px;
+   animation: Ldsellipsis3 0.6s infinite;
+}
+
+@keyframes Ldsellipsis1 {
+   0% {
+      transform: scale(0);
+   }
+
+   100% {
+      transform: scale(1);
+   }
+}
+
+@keyframes Ldsellipsis3 {
+   0% {
+      transform: scale(1);
+   }
+
+   100% {
+      transform: scale(0);
+   }
+}
+
+@keyframes Ldsellipsis2 {
+   0% {
+      transform: translate(0, 0);
+   }
+
+   100% {
+      transform: translate(24px, 0);
+   }
+}
+
+/* .loader {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 3px dashed teal;
+} */
