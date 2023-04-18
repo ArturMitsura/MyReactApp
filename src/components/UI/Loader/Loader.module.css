@@ -13,6 +13,7 @@
    border-radius: 50%;
    background: teal;
    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+   
 }
 
 .Ldsellipsis div:nth-child(1) {

@@ -6,12 +6,19 @@
 
 #root {
    display: flex;
+   /* flex-direction: column-reverse; */
    justify-content: center;
+   /* align-items: center; */
    padding: 0 15px;
 }
 
+#root>div {
+   width: 100%;
+}
+
 .App {
-   width: 900px;
+   /* width: 900px; */
+
 }
 
 .header {
@@ -33,6 +40,13 @@
    align-items: center;
    background-color: #001aff3a;
    column-gap: 15px;
+
+}
+
+.post__btns {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
 
 }
 
@@ -77,4 +91,70 @@
    border: 1px solid rgb(80, 8, 180);
    font-weight: bold;
    background-color: #001aff3a;
+}
+
+.navbar {
+   height: 50px;
+   display: flex;
+   align-items: center;
+   padding: 0 15px;
+   border-radius: 0 0 15px 15px;
+   background-color: #001aff3a;
+   border-left: 2px solid rgb(80, 8, 180);
+   border-bottom: 2px solid rgb(80, 8, 180);
+   border-right: 2px solid rgb(80, 8, 180);
+}
+
+.navbar__links {
+   margin-left: auto;
+
+}
+
+.navbar__links a {
+   margin-right: 15px;
+   text-transform: uppercase;
+   text-decoration: none;
+   position: relative;
+}
+
+.navbar__links a::after {
+   content: '';
+   position: absolute;
+   width: 0%;
+   height: 2px;
+   bottom: -2px;
+   left: 50%;
+   background-color: rgb(80, 8, 180);
+   transform: translateX(-50%);
+   transition: width 0.3s ease 0s;
+}
+
+.navbar__links a:hover::after {
+   width: 100%;
+}
+
+.PostId {
+   font-size: +22px;
+}
+
+.PostId__h1 {
+   padding: 15px 0 25px 0;
+}
+
+.PostId__h2 {
+   padding: 35px 0 15px 0;
+   text-align: center;
+}
+
+.PostId__h2 {
+   padding: 35px 0 15px 0;
+   text-align: center;
+}
+
+.PostId__comment {
+   padding: 15px 15px 15px 15px;
+   background-color: #001aff3a;
+   border-radius: 25px;
+   margin-bottom: 25px;
+   border: 2px solid rgb(80, 8, 180);
 }
