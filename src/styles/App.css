@@ -146,15 +146,15 @@
    text-align: center;
 }
 
-.PostId__h2 {
-   padding: 35px 0 15px 0;
-   text-align: center;
-}
-
 .PostId__comment {
    padding: 15px 15px 15px 15px;
    background-color: #001aff3a;
    border-radius: 25px;
    margin-bottom: 25px;
    border: 2px solid rgb(80, 8, 180);
+}
+
+.login {
+   max-width: 500px;
+   margin: 0 auto;
 }
